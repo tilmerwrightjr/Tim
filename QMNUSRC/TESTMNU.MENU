@@ -1,0 +1,162 @@
+:pnlgrp.
+:copyr.
+(c) Copyright 2023-24 Eradani Inc. All rights reserved.
+:var name=zmenu.
+:keyl    name=menukeys
+         help=keyl.
+:keyi    key=F1
+         help=helpf1
+         action=help.
+:keyi    key=f3
+         help=exit
+         action='exit set'
+         varupd=no.
+F3=Exit
+:keyi    key=F4
+         help=prompt
+         action=prompt.
+F4=Prompt
+:keyi    key=F9
+         help=retrieve
+         action=retrieve.
+F9=Retrieve
+:keyi    key=F12
+         help=cancel
+         action='cancel set'
+         varupd=no.
+F12=Cancel
+:keyi    key=enter
+         help=enter
+         action=enter.
+:keyi    key=help
+         help=help
+         action=help.
+:keyi    key=home
+         help=home
+         action=home.
+:keyi    key=pagedown
+         help=pagedown
+         action=pagedown.
+:keyi    key=pageup
+         help=pageup
+         action=pageup.
+:keyi    key=print
+         help=print
+         action=print.
+:ekeyl.
+:panel   name=cmdigit
+         keyl=menukeys
+         help='menu/help'
+         enter='msg cpd9817 qcpfmsg'
+         panelid=zmenu
+         topsep=sysnam.
+iGit Commands
+:menu    depth='*'
+         scroll=yes
+         botsep=space.
+:topinst.Select one for the following:
+:menui   option=99
+         help='menu/nohelp'
+         action='cmd dspjoblog'.
+Display job log
+:menui   option=1
+         help='menu/nohelp'
+         action='cmd ?gitadd'.
+Add to next commit                                     GITADD
+:emenu.
+:cmdline  size=long.
+Selection or command
+:epanel.
+:help   name=keyl.
+Function Keys - Help
+:xh3.Function keys
+:ehelp.
+.*
+:help   name=helpf1.
+:parml.
+:pt.F1=Help
+:pd.
+Provides addtional information about using the display or a
+specific field on the display.
+:eparml.
+:ehelp.
+:help   name=exit.
+:parml.
+:pt.F3=Exit
+:pd.
+"Ends the current task and return to the display from which
+the task was started.
+:eparml.
+:ehelp.
+:help   name=prompt.
+:parml.
+:pt.F4=Prompt
+:pd.
+Provides assistance in entering a command.
+:eparml.
+:ehelp.
+:help   name=retrieve.
+:parml.
+:pt.F9=Retrieve
+:pd.
+Displays the last command.
+:eparml.
+:ehelp.
+:help   name=cancel.
+:parml.
+:pt.F12=Cancel
+:pd.
+Return to the previous menu or display.
+:eparml.
+:ehelp.
+:help   name=enter.
+:parml.
+:pt.Enter
+:pd.
+Submits for processing
+:eparml.
+:ehelp.
+:help   name=help.
+:parml.
+:pt.Help
+:pd.
+Provides additional information.
+:eparml.
+:ehelp.
+:help   name=home.
+:parml.
+:pt.Home
+:pd.
+Goes to the first menu.
+:eparml.
+:ehelp.
+:help   name=pagedown.
+:parml.
+:pt.Page Down(Roll Up)
+:pd.
+Move forward.
+:eparml.
+:ehelp.
+:help   name=pageup.
+:parml.
+:pt.Page Up(Roll Down)
+:pd.
+Moves backwards.
+:eparml.
+:ehelp.
+:help   name=print.
+:parml.
+:pt.Print
+:pd.
+Prints current display.
+:eparml.
+:ehelp.
+:help   name='menu/nohelp'.
+No Help Available
+:p.
+Help information not available.
+:ehelp.
+:help   name='menu/help'.
+iGit Commands. Select command
+:ehelp.
+:epnlgrp.

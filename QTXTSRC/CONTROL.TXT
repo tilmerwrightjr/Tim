@@ -1,0 +1,5 @@
+lib demoblprd demoprd {*CMD *PGM *DSPF}
+lib demoblprdf demoprdf {*LF CUSMST/*PF KEEPDATA} - full replace, creates, not chgpf
+file demoblprdf demoprdf {CUSMST CUSMSTL1 CUSMSTL2 CUSMSTL3} - does a CHGPF
+sql demoblprdf demoprdf {*TABLE *VIEW *INDEX} - will handle dds but creates them as SQL objs
+
