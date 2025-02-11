@@ -1,0 +1,27 @@
+---
+targets:
+  LIB1-CUSTMAINT-CMD :
+    objlib: LIB1
+    objname: CUSTMAINT
+    objtype: CMD
+    requisites :
+      - QCMDSRC.FILE/CUSTMAINT.MBR
+    requisiteyamlrecords :
+      - LIBL-QCMDSRC-SRCMBR-CUSTMAINT
+    command: CRTCMD
+    parameters:
+      - "CMD($(LIB1)/CUSTMAINT)"
+      - "PGM(*LIBL/CUSTMAINT)"
+      - "SRCFILE(QCMDSRC)"
+      - "SRCMBR(CUSTMAINT)"
+      - "TEXT('Customer Maintenance')"
+      - "MODE(*PROD *DEBUG *SERVICE)"
+      - "ALLOW(*BPGM *IPGM *EXEC *INTERACT *BATCH *BREXX *IREXX *BMOD *IMOD)"
+      - "CURLIB(*NOCHG)"
+      - "PRDLIB(*NOCHG)"
+  LIBL-QCMDSRC-SRCMBR-CUSTMAINT :
+    objlib: "*LIBL"
+    objname: QCMDSRC
+    objtype: SRCMBR
+    objattr: "CMD"
+    mbrname: CUSTMAINT

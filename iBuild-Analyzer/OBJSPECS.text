@@ -1,0 +1,28 @@
+Object Selection Report (*OBJSEL)
+Input object selection Criteria:
+   TWPRDOBJ/*ALL (*PGM *SRVPGM *SQLPKG *MODULE *BNDDIR *CMD *MSGF *FILE *MENU *PNLGRP *NOTTGT) ~
+
+Result of object selection:
+   TWPRDOBJ/*ALL (*PGM *SRVPGM *SQLPKG *MODULE *BNDDIR *CMD *MSGF *FILE *MENU *PNLGRP *NOTTGT) ~
+     TWPRDOBJ
+          *PGM
+               CUSTMAINT   RPGLE   
+          *MODULE
+               CUSMAIN     RPGLE   
+               CUSMNT      RPGLE   
+               SCHNAM      RPGLE   
+               SCHZIP      RPGLE   
+          *CMD
+               CUSTMAINT           
+          *FILE
+               CUSMST      PF      
+               CUSMSTL1    LF      
+               CUSMSTL2    LF      
+               CUSMSTL3    LF      
+               MAINMENU    DSPF    
+               MNTMENU     DSPF    
+               SCHNAMD     DSPF    
+               SCHZIPD     DSPF    
+          *DTAARA
+               ERAALZDIR           
+End of Object Selection Report

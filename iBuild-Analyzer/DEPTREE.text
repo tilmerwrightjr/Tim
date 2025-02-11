@@ -1,0 +1,151 @@
+Dependency Tree Report (*DEPTREE)
+  *PGM RPGLE      LIB1/CUSTMAINT
+    *MODULE RPGLE   LIB1/CUSMAIN
+      *SRCMBR RPGLE   *LIBL/QRPGLESRC          (CUSMAIN)
+      *FILE DSPF      LIB1/MAINMENU
+        *SRCMBR DSPF    *LIBL/QDDSSRC          (MAINMENU)
+    *MODULE RPGLE   LIB1/CUSMNT
+      *SRCMBR RPGLE   *LIBL/QRPGLESRC          (CUSMNT)
+      *FILE LF        LIB1/CUSMSTL1
+        *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL1)
+        *FILE PF        LIB1/CUSMST
+          *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+      *FILE DSPF      LIB1/MNTMENU
+        *SRCMBR DSPF    *LIBL/QDDSSRC          (MNTMENU)
+        *FILE LF        LIB1/CUSMSTL1
+          *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL1)
+          *FILE PF        LIB1/CUSMST
+            *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+    *MODULE RPGLE   LIB1/SCHNAM
+      *SRCMBR RPGLE   *LIBL/QRPGLESRC          (SCHNAM)
+      *FILE LF        LIB1/CUSMSTL3
+        *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL3)
+        *FILE PF        LIB1/CUSMST
+          *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+      *FILE DSPF      LIB1/SCHNAMD
+        *SRCMBR DSPF    *LIBL/QDDSSRC          (SCHNAMD)
+        *FILE LF        LIB1/CUSMSTL3
+          *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL3)
+          *FILE PF        LIB1/CUSMST
+            *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+    *MODULE RPGLE   LIB1/SCHZIP
+      *SRCMBR RPGLE   *LIBL/QRPGLESRC          (SCHZIP)
+      *FILE LF        LIB1/CUSMSTL2
+        *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL2)
+        *FILE PF        LIB1/CUSMST
+          *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+      *FILE DSPF      LIB1/SCHZIPD
+        *SRCMBR DSPF    *LIBL/QDDSSRC          (SCHZIPD)
+        *FILE LF        LIB1/CUSMSTL2
+          *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL2)
+          *FILE PF        LIB1/CUSMST
+            *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+    *FILE DSPF      LIB1/MAINMENU
+      *SRCMBR DSPF    *LIBL/QDDSSRC          (MAINMENU)
+    *FILE LF        LIB1/CUSMSTL1
+      *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL1)
+      *FILE PF        LIB1/CUSMST
+        *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+    *FILE DSPF      LIB1/MNTMENU
+      *SRCMBR DSPF    *LIBL/QDDSSRC          (MNTMENU)
+      *FILE LF        LIB1/CUSMSTL1
+        *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL1)
+        *FILE PF        LIB1/CUSMST
+          *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+    *FILE LF        LIB1/CUSMSTL3
+      *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL3)
+      *FILE PF        LIB1/CUSMST
+        *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+    *FILE DSPF      LIB1/SCHNAMD
+      *SRCMBR DSPF    *LIBL/QDDSSRC          (SCHNAMD)
+      *FILE LF        LIB1/CUSMSTL3
+        *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL3)
+        *FILE PF        LIB1/CUSMST
+          *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+    *FILE LF        LIB1/CUSMSTL2
+      *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL2)
+      *FILE PF        LIB1/CUSMST
+        *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+    *FILE DSPF      LIB1/SCHZIPD
+      *SRCMBR DSPF    *LIBL/QDDSSRC          (SCHZIPD)
+      *FILE LF        LIB1/CUSMSTL2
+        *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL2)
+        *FILE PF        LIB1/CUSMST
+          *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+  *MODULE RPGLE   LIB1/CUSMAIN
+    *SRCMBR RPGLE   *LIBL/QRPGLESRC          (CUSMAIN)
+    *FILE DSPF      LIB1/MAINMENU
+      *SRCMBR DSPF    *LIBL/QDDSSRC          (MAINMENU)
+  *MODULE RPGLE   LIB1/CUSMNT
+    *SRCMBR RPGLE   *LIBL/QRPGLESRC          (CUSMNT)
+    *FILE LF        LIB1/CUSMSTL1
+      *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL1)
+      *FILE PF        LIB1/CUSMST
+        *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+    *FILE DSPF      LIB1/MNTMENU
+      *SRCMBR DSPF    *LIBL/QDDSSRC          (MNTMENU)
+      *FILE LF        LIB1/CUSMSTL1
+        *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL1)
+        *FILE PF        LIB1/CUSMST
+          *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+  *MODULE RPGLE   LIB1/SCHNAM
+    *SRCMBR RPGLE   *LIBL/QRPGLESRC          (SCHNAM)
+    *FILE LF        LIB1/CUSMSTL3
+      *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL3)
+      *FILE PF        LIB1/CUSMST
+        *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+    *FILE DSPF      LIB1/SCHNAMD
+      *SRCMBR DSPF    *LIBL/QDDSSRC          (SCHNAMD)
+      *FILE LF        LIB1/CUSMSTL3
+        *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL3)
+        *FILE PF        LIB1/CUSMST
+          *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+  *MODULE RPGLE   LIB1/SCHZIP
+    *SRCMBR RPGLE   *LIBL/QRPGLESRC          (SCHZIP)
+    *FILE LF        LIB1/CUSMSTL2
+      *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL2)
+      *FILE PF        LIB1/CUSMST
+        *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+    *FILE DSPF      LIB1/SCHZIPD
+      *SRCMBR DSPF    *LIBL/QDDSSRC          (SCHZIPD)
+      *FILE LF        LIB1/CUSMSTL2
+        *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL2)
+        *FILE PF        LIB1/CUSMST
+          *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+  *FILE PF        LIB1/CUSMST
+    *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+  *FILE LF        LIB1/CUSMSTL1
+    *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL1)
+    *FILE PF        LIB1/CUSMST
+      *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+  *FILE LF        LIB1/CUSMSTL2
+    *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL2)
+    *FILE PF        LIB1/CUSMST
+      *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+  *FILE LF        LIB1/CUSMSTL3
+    *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL3)
+    *FILE PF        LIB1/CUSMST
+      *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+  *FILE DSPF      LIB1/MAINMENU
+    *SRCMBR DSPF    *LIBL/QDDSSRC          (MAINMENU)
+  *FILE DSPF      LIB1/MNTMENU
+    *SRCMBR DSPF    *LIBL/QDDSSRC          (MNTMENU)
+    *FILE LF        LIB1/CUSMSTL1
+      *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL1)
+      *FILE PF        LIB1/CUSMST
+        *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+  *FILE DSPF      LIB1/SCHNAMD
+    *SRCMBR DSPF    *LIBL/QDDSSRC          (SCHNAMD)
+    *FILE LF        LIB1/CUSMSTL3
+      *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL3)
+      *FILE PF        LIB1/CUSMST
+        *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+  *FILE DSPF      LIB1/SCHZIPD
+    *SRCMBR DSPF    *LIBL/QDDSSRC          (SCHZIPD)
+    *FILE LF        LIB1/CUSMSTL2
+      *SRCMBR LF      *LIBL/QDDSSRC          (CUSMSTL2)
+      *FILE PF        LIB1/CUSMST
+        *SRCMBR PF      *LIBL/QDDSSRC          (CUSMST)
+  *CMD            LIB1/CUSTMAINT
+    *SRCMBR CMD     *LIBL/QCMDSRC          (CUSTMAINT)
+End of Dependency Tree Report
