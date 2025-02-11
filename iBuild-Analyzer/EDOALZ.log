@@ -1,0 +1,32 @@
+
+Generating Object Specs Report - Input.
+
+Generating Object Specs Report - Expanded.
+
+Beginning object processing of all objects.
+  15 selected objects processed. 28 objects added. Total objects: 28.
+
+Generating Object List Report.
+
+Generating Build Targets Report.
+
+Generating Missing Objects Report.
+
+Generating Object Details Report.
+
+Generating SQL Dependencies Report.
+
+Generating Source Location Report.
+
+Generating Requisite Location Report.
+
+Generating Makefiles.
+Create commands generated for 45 objects in 14 makefiles.
+
+Generating Object Dependencies Report.
+
+Generating Library Mappings list.
+
+Generating build library list.
+
+Generating Azure pipeline.

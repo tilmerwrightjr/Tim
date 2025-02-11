@@ -1,0 +1,31 @@
+---
+targets:
+  LIB1-SCHZIP-MODULE :
+    objlib: LIB1
+    objname: SCHZIP
+    objtype: MODULE
+    objattr: RPGLE
+    requisites :
+      - QRPGLESRC.FILE/SCHZIP.MBR
+      - CUSMSTL2.FILE
+      - SCHZIPD.FILE
+    requisiteyamlrecords :
+      - LIBL-QRPGLESRC-SRCMBR-SCHZIP
+      - LIB1-CUSMSTL2-FILE
+      - LIB1-SCHZIPD-FILE
+    command: CRTRPGMOD
+    parameters:
+      - "SRCFILE(QRPGLESRC)"
+      - "SRCMBR(SCHZIP)"
+      - "TGTCCSID(37)"
+      - "PRFDTA(*NOCOL)"
+      - "SRTSEQ(*HEX)"
+      - "LANGID(*JOBRUN)"
+      - "MODULE($(LIB1)/SCHZIP)"
+      - "STGMDL(*INHERIT)"
+  LIBL-QRPGLESRC-SRCMBR-SCHZIP :
+    objlib: "*LIBL"
+    objname: QRPGLESRC
+    objtype: SRCMBR
+    objattr: "RPGLE"
+    mbrname: SCHZIP
