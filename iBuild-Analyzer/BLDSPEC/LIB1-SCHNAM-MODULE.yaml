@@ -1,0 +1,31 @@
+---
+targets:
+  LIB1-SCHNAM-MODULE :
+    objlib: LIB1
+    objname: SCHNAM
+    objtype: MODULE
+    objattr: RPGLE
+    requisites :
+      - QRPGLESRC.FILE/SCHNAM.MBR
+      - CUSMSTL3.FILE
+      - SCHNAMD.FILE
+    requisiteyamlrecords :
+      - LIBL-QRPGLESRC-SRCMBR-SCHNAM
+      - LIB1-CUSMSTL3-FILE
+      - LIB1-SCHNAMD-FILE
+    command: CRTRPGMOD
+    parameters:
+      - "SRCFILE(QRPGLESRC)"
+      - "SRCMBR(SCHNAM)"
+      - "TGTCCSID(37)"
+      - "PRFDTA(*NOCOL)"
+      - "SRTSEQ(*HEX)"
+      - "LANGID(*JOBRUN)"
+      - "MODULE($(LIB1)/SCHNAM)"
+      - "STGMDL(*INHERIT)"
+  LIBL-QRPGLESRC-SRCMBR-SCHNAM :
+    objlib: "*LIBL"
+    objname: QRPGLESRC
+    objtype: SRCMBR
+    objattr: "RPGLE"
+    mbrname: SCHNAM

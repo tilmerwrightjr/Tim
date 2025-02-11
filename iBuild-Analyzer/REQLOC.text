@@ -1,0 +1,32 @@
+Requisite Location Report
+Summary report:
+TWPRDOBJ objects:
+    Objects with requisites in library TWPRDOBJ: 7
+    Objects with requisites in library TWPRDOBJ: 7
+    Objects with requisites in library TWPRDSRC: 13
+
+Detail report:
+TWPRDOBJ objects:
+    Objects with requisites in library TWPRDOBJ:
+        *FILE LF        TWPRDOBJ/CUSMSTL1                   
+        *FILE LF        TWPRDOBJ/CUSMSTL2                   
+        *FILE LF        TWPRDOBJ/CUSMSTL3                   
+        *FILE DSPF      TWPRDOBJ/MNTMENU                    
+        *FILE DSPF      TWPRDOBJ/SCHNAMD                    
+        *FILE DSPF      TWPRDOBJ/SCHZIPD                    
+        *PGM RPGLE      TWPRDOBJ/CUSTMAINT                  
+    Objects with requisites in library TWPRDSRC:
+        *CMD            TWPRDOBJ/CUSTMAINT                  
+        *FILE PF        TWPRDOBJ/CUSMST                     
+        *FILE LF        TWPRDOBJ/CUSMSTL1                   
+        *FILE LF        TWPRDOBJ/CUSMSTL2                   
+        *FILE LF        TWPRDOBJ/CUSMSTL3                   
+        *FILE DSPF      TWPRDOBJ/MAINMENU                   
+        *FILE DSPF      TWPRDOBJ/MNTMENU                    
+        *FILE DSPF      TWPRDOBJ/SCHNAMD                    
+        *FILE DSPF      TWPRDOBJ/SCHZIPD                    
+        *MODULE RPGLE   TWPRDOBJ/CUSMAIN                    
+        *MODULE RPGLE   TWPRDOBJ/CUSMNT                     
+        *MODULE RPGLE   TWPRDOBJ/SCHNAM                     
+        *MODULE RPGLE   TWPRDOBJ/SCHZIP                     
+End of Requisite Location Report.
