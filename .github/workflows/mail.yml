@@ -1,0 +1,39 @@
+name: Deploy to IBM i
+on:
+  push:
+    branches:
+    - ITG
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - name: Deploy and build app
+      uses: appleboy/ssh-action@v0.1.10
+      with:
+        host: ${{ vars.HOSTNAME }}
+        username: ${{ vars.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ vars.PORT }}
+        command_timeout: 30m
+        script: |
+          PATH=/QOpenSys/pkgs/bin:$PATH
+          export PATH
+          bash -c "
+            echo \"Starting deployment\" &&
+            echo \"Setting current library to ${{ vars.SRCLIB }}\" &&
+            liblist -c \"${{ vars.SRCLIB }}\" &&
+            echo \"Adding required libraries to library list\" &&
+            liblist -a \"${{ vars.SRCLIB }}\" &&
+            liblist -a \"${{ vars.OBJLIB }}\" &&
+            liblist -a IPACKAGE &&
+            echo \"Running git pull\" &&
+            system \"gitpull\" &&
+            echo \"Building application to ${{ vars.OBJLIB }} from ${{ vars.SRCLIB }}\" &&
+            system \"edomake obj((${{ vars.OBJLIB }}/*all)) mstlib(${{ vars.SRCLIB }})\" &&
+            echo \"packaging and sending\" &&
+            system \"IPACKAGE/PACKAGE CONTROL('/qsys.lib/${{vars.SRCLIB}}.lib/qtxtsrc.file/packager1
+            echo \"Unpacking package\" &&
+            system \"IPACKAGE/UNPACKAGE SAVF(${{vars.OBJLIB}}/DEMO1)\" &&
+            echo \"Deployment complete!\"
+          "
