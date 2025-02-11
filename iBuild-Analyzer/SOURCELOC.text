@@ -1,0 +1,22 @@
+Source Location Report
+Summary report:
+TWPRDOBJ objects:
+    Objects with source in library TWPRDSRC: 13
+
+Detail report:
+TWPRDOBJ objects:
+    Objects with source in library TWPRDSRC:
+        *MODULE RPGLE   TWPRDOBJ/CUSMAIN                    
+        *FILE DSPF      TWPRDOBJ/MAINMENU                   
+        *MODULE RPGLE   TWPRDOBJ/CUSMNT                     
+        *FILE LF        TWPRDOBJ/CUSMSTL1                   
+        *FILE PF        TWPRDOBJ/CUSMST                     
+        *FILE DSPF      TWPRDOBJ/MNTMENU                    
+        *MODULE RPGLE   TWPRDOBJ/SCHNAM                     
+        *FILE LF        TWPRDOBJ/CUSMSTL3                   
+        *FILE DSPF      TWPRDOBJ/SCHNAMD                    
+        *MODULE RPGLE   TWPRDOBJ/SCHZIP                     
+        *FILE LF        TWPRDOBJ/CUSMSTL2                   
+        *FILE DSPF      TWPRDOBJ/SCHZIPD                    
+        *CMD            TWPRDOBJ/CUSTMAINT                  
+End of Source Location Report.

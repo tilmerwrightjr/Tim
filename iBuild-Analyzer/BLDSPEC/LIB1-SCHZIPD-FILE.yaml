@@ -1,0 +1,26 @@
+---
+targets:
+  LIB1-SCHZIPD-FILE :
+    objlib: LIB1
+    objname: SCHZIPD
+    objtype: FILE
+    objattr: DSPF
+    requisites :
+      - QDDSSRC.FILE/SCHZIPD.MBR
+      - CUSMSTL2.FILE
+    requisiteyamlrecords :
+      - LIBL-QDDSSRC-SRCMBR-SCHZIPD
+      - LIB1-CUSMSTL2-FILE
+    command: EDOCRTOBJ
+    parameters:
+      - "BLDTGT($(LIB1)/SCHZIPD)"
+      - "OBJTYPE(*FILE)"
+      - "OBJATTR(DSPF)"
+      - "CMD(CRTDSPF)"
+      - "CMDPARMS(' FILE($(LIB1)/SCHZIPD) SRCFILE(QDDSSRC) SRCMBR(SCHZIPD) DFRWRT(*YES) RSTDSP(*NO) TEXT(''Customer Search by Zip'')')"
+  LIBL-QDDSSRC-SRCMBR-SCHZIPD :
+    objlib: "*LIBL"
+    objname: QDDSSRC
+    objtype: SRCMBR
+    objattr: "DSPF"
+    mbrname: SCHZIPD
