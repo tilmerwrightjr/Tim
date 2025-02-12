@@ -1,0 +1,11 @@
+lib TWQUABLD TWQUAOBJ {
+       *pgm
+       *srvpgm
+       *msgf
+       *cmd
+       *dspf
+       *table
+       *file
+       *view
+       *index
+}
