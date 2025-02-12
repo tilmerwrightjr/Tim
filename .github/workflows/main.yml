@@ -2,7 +2,7 @@ name: Deploy to IBM i
 on:
   push:
     branches:
-    - ITG
+    - QUA
 jobs:
   deploy:
     runs-on: ubuntu-latest
