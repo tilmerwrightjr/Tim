@@ -5,6 +5,9 @@
      A* DESCRIPTION:  THIS IS THE PHYSICAL FILE CUSMST. IT HAS        *
      A*          ONE RECORD FORMAT CALLED CUSREC.                     *
      A*****************************************************************
+     A* LAST CHANGE DATE:            2/13/2025                        *
+     A* LAST CHANGE DEVELOPER:       TIM WRIGHT                       *
+     A*****************************************************************
      A* CUSTOMER MASTER FILE -- CUSMST
      A          R CUSREC
      A            CUST           5  0       TEXT('CUSTOMER NUMBER')
