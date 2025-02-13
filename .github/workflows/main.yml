@@ -32,7 +32,7 @@ jobs:
             echo \"Building application to ${{ vars.OBJLIB }} from ${{ vars.SRCLIB }}\" &&
             system \"edomake obj((${{ vars.OBJLIB }}/*all)) mstlib(${{ vars.SRCLIB }})\" &&
             echo \"packaging and sending\" &&
-            system \"IDEPLOY/PACKAGE CONTROL('/qsys.lib/${{vars.SRCLIB}}.lib/qtxtsrc.file/packager1)\" &&
+            system \"IDEPLOY/PACKAGE CONTROL('/qsys.lib/${{vars.SRCLIB}}.lib/qtxtsrc.file/packager1.mbr') RESULT(${{vars.OBJLIB}}/DEMO1)\" &&
             echo \"Unpacking package\" &&
             system \"IDEPLOY/UNPACKAGE SAVF(${{vars.OBJLIB}}/DEMO1)\" &&
             echo \"Deployment complete!\"
