@@ -26,14 +26,14 @@ jobs:
             echo \"Adding required libraries to library list\" &&
             liblist -a \"${{ vars.SRCLIB }}\" &&
             liblist -a \"${{ vars.OBJLIB }}\" &&
-            liblist -a IPACKAGE &&
+            liblist -a IDEPLOY &&
             echo \"Running git pull\" &&
             system \"gitpull\" &&
             echo \"Building application to ${{ vars.OBJLIB }} from ${{ vars.SRCLIB }}\" &&
             system \"edomake obj((${{ vars.OBJLIB }}/*all)) mstlib(${{ vars.SRCLIB }})\" &&
             echo \"packaging and sending\" &&
-            system \"IPACKAGE/PACKAGE CONTROL('/qsys.lib/${{vars.SRCLIB}}.lib/qtxtsrc.file/packager1)\" &&
+            system \"IDEPLOY/PACKAGE CONTROL('/qsys.lib/${{vars.SRCLIB}}.lib/qtxtsrc.file/packager2.mbr') RESULT(${{vars.OBJLIB}}/DEMO1)\" &&
             echo \"Unpacking package\" &&
-            system \"IPACKAGE/UNPACKAGE SAVF(${{vars.OBJLIB}}/DEMO1)\" &&
+            system \"IDEPLOY/UNPACKAGE SAVF(${{vars.OBJLIB}}/DEMO1)\" &&
             echo \"Deployment complete!\"
           "

@@ -1,0 +1,2 @@
+lib twquabld twquaobj {*CMD *PGM *DSPF}
+file twquabld twquaobj {CUSMST CUSMSTL1 CUSMSTL2 CUSMSTL3}
