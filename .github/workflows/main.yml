@@ -2,7 +2,7 @@ name: Deploy to IBM i
 on:
   push:
     branches:
-    - ITG
+    - QUA
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -32,7 +32,7 @@ jobs:
             echo \"Building application to ${{ vars.OBJLIB }} from ${{ vars.SRCLIB }}\" &&
             system \"edomake obj((${{ vars.OBJLIB }}/*all)) mstlib(${{ vars.SRCLIB }})\" &&
             echo \"packaging and sending\" &&
-            system \"IPACKAGE/PACKAGE CONTROL('/qsys.lib/${{vars.SRCLIB}}.lib/qtxtsrc.file/packager1
+            system \"IPACKAGE/PACKAGE CONTROL('/qsys.lib/${{vars.SRCLIB}}.lib/qtxtsrc.file/packager1)\" &&
             echo \"Unpacking package\" &&
             system \"IPACKAGE/UNPACKAGE SAVF(${{vars.OBJLIB}}/DEMO1)\" &&
             echo \"Deployment complete!\"
